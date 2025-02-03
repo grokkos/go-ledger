@@ -83,3 +83,7 @@ func (s *Server) waitForShutdown() error {
 	fmt.Println("Server exited properly")
 	return nil
 }
+
+func (s *Server) Router() *mux.Router {
+	return s.router
+}
